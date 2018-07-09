@@ -71,7 +71,8 @@ var absSix = Math.abs(p - q);
 
 console.log(absSix);
 
-// 5. 27 squared is equal to what number raised to the third power?
+//48
 
+console.log("7. Find another math operation we haven't talked about yet on the MDN (Mozilla Developer Network) and try it out below.");
 
-// 7. Find another math operation we haven't talked about yet on the MDN (Mozilla Developer Network) and try it out below.
+console.log(Math.random());
