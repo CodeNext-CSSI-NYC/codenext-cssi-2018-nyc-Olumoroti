@@ -3,7 +3,7 @@
 var readline = require("readline-sync");
 
 console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-//console.log("\n");
+
 console.log("Welcome to Mo's Super Easter Predictor!");
 
 let y = readline.question("Please Enter a Year Greater Than 1582: ");
@@ -25,6 +25,6 @@ let p = (h + r - 7 * m + 114) % 31;
 let day = p + 1;
 let month = n;
 console.log("In " + y + ", Easter is on " + month + "/" + day);
-console.log("Thanks for using my program. Credits for original program go to gmichnikow on Github.com, and modifications by myself with assitance from others. ™Google.")
-//console.log("\n");
+console.log("Thanks for using my program. Credits for original program go to gmichnikow on Github.com, and modifications by myself with assitance from others. ™Google.");
+
 console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
