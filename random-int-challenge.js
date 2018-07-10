@@ -23,5 +23,5 @@ else{
 
 
 console.log("You rolled a " + result + "!");
-console.log("Thanks for using my program. Credits for original program go to myself with assitance from others. ™Google.")
+console.log("Thanks for using my program. Credits for original program go to myself with assitance from others. ™Google.");
 console.log("###################################################################");
