@@ -4,6 +4,8 @@ var readline = require("readline-sync");
 
 console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!");
 
+console.log();
+
 console.log("Welcome to Mo's Right Cylinder Calculator 2018!")
 
 let radius = parseFloat(readline.question("Enter the radius of your cylinder: "));
