@@ -3,6 +3,7 @@
 var readline = require("readline-sync");
 
 console.log("%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%");
+console.log();
 console.log("Welcome to Mo's Pythagorean Triplet Checker 2018!");
 var a = parseFloat(readline.question("Enter in the length of one leg: "));
 var b = parseFloat(readline.question("Enter in the length of the other leg: "));
@@ -29,3 +30,5 @@ if(a + b <= c || b + c <= a || a + c <= b){
 }
 
 console.log("Thanks for using my program. Credits for original program go to myself with assitance from others. ™Google.");
+console.log();
+console.log("%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%");

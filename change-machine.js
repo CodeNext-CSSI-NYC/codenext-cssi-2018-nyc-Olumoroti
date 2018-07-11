@@ -3,6 +3,7 @@
 var readline = require("readline-sync");
 
 console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+console.log();
 console.log("Welcome to Mo's Change Calculator 2018!");
 let cents = readline.question("Please enter the amount of cents you have: ");
 
@@ -34,4 +35,5 @@ console.log(dimes + " dimes,");
 console.log(nickels + " nickels,");
 console.log("and " + pennies + " pennies.");
 console.log("Thanks for using my program. Credits for original program go to myself with assitance from others. ™Google.");
+console.log();
 console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
