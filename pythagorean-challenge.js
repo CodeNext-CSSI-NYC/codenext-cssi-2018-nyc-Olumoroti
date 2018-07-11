@@ -21,7 +21,7 @@ else if((a ** 2) + (b ** 2) < (c ** 2)){
 }
 
 if(a > c || b > c){
-  console.log("Oh, and a leg is NOT bigger than the hypotenuse, as the hypotenuse is the longest side of a triangle. Check your answer correctly again.");
+  console.log("Oh, and a leg is NOT bigger than the hypotenuse, as the hypotenuse is the longest side of a triangle. Input your values correctly again, as this may actually be a Pythagorean Triplet.");
 }
 
 if(a + b <= c || b + c <= a || a + c <= b){
