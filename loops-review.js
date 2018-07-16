@@ -104,7 +104,12 @@ let readline = require("readline-sync");
 // ***********
 //
 
-let asterikLine = " ***********";
+// let asterikLine = " ***********";
+//
+// for (i = 0; i <= 7; i++) {
+//   console.log(asterikLine);
+//   console.log();
+// }
 
 
 // 6. Use this line:
@@ -117,6 +122,15 @@ let asterikLine = " ***********";
 
 
 
+// let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//
+// for (i = 0; i < alphabet.length; i++) {
+//   let letter = alphabet[i];
+//   console.log(letter.toLowerCase());
+// }
+
+
+
 // 7. Last time we listed out all of the factors of a number.
 // This time we will do something similar: we will check if a number is a perfect number.
 // A perfect number is one where all of the factors (other than the number itself)
@@ -126,7 +140,24 @@ let asterikLine = " ***********";
 // 6 is perfect: 1 + 2 + 3 = 6.
 // 28 is too: 1 + 2 + 4 + 7 + 14 = 28
 // No other small numbers are.
-// Write a function that takes in a number uses a for loop to go through the
-// values from 1 to number - 1 and add together all the ones that are factors of
+// Write a function that takes in a number, uses a for loop to go through the
+// values from 1 to that number minus 1 and add together all the ones that are factors of
 // number. Return true if this sum is equal to number, false otherwise.
 // Make sure it returns true for 6 and 28 and false for pretty much anything else.
+
+
+let num = parseInt(readline.question("Enter a number: "));
+let array = [];
+let sum = 0;
+
+for (let i = 1; i < num; i++) {
+  if (num % i == 0) {
+    sum += i;
+  }
+}
+
+if (sum == num && num != 1) {
+  console.log("This is a perfect number.");
+} else {
+  console.log("This is not a perfect number.");
+}
