@@ -14,12 +14,21 @@
 // Print out the second-to-last value in the array again, but this time,
 // use the length property and subtraction (e.g. arr[arr.length + 3], though +3 is wrong).
 
-let array1 = [5, 7, 8, 13, 4];
-let secondValue = array1[1];
-console.log(array1[2]);
-array1[3] = 0;
-let lastVal = array1.pop();
-console.log(lastVal);
+
+let readline = require("readline-sync");
+let randomInt = require('random-int');
+//console.clear();
+// let arrayOne = [5, 7, 8, 13, 4];
+// let secondValue = arrayOne[1];
+// console.log(arrayOne[2]);
+// arrayOne[3] = 0;
+// let lastVal = arrayOne.pop();
+// console.log(lastVal);
+// arrayOne.push(524);
+// arrayOne.push(76);
+// console.log(arrayOne[4]);
+// console.log(arrayOne[arrayOne.length - 2]);
+
 
 
 // 2a. Create an array with five items.
@@ -30,10 +39,31 @@ console.log(lastVal);
 
 
 
+// let arrayTwoA = [1, 2, 3, 4, 5];
+// console.log(arrayTwoA[0]);
+// console.log(arrayTwoA[1]);
+// console.log(arrayTwoA[2]);
+// console.log(arrayTwoA[3]);
+// console.log(arrayTwoA[4]);
+
+
+
 // 2b. Create an empty array.
 // Add a few items to the array one at a time using push.
 // What if you needed to add 100 items to the array, or 1000?
 // Hopefully these examples illustrate how helpful for loops can be.
+
+
+
+// let arrayTwoB = [];
+// arrayTwoB.push(3);
+// arrayTwoB.push(" to the ");
+// arrayTwoB.push(1);
+// arrayTwoB.push(" to the ");
+// arrayTwoB.push(1);
+// arrayTwoB.push(" to the ");
+// arrayTwoB.push(3);
+// console.log(arrayTwoB.toString());
 
 
 
@@ -43,6 +73,17 @@ console.log(lastVal);
 // You will need to do this on two separate lines.
 // How many numbers should be in your array when the for loop is done?
 // Print out the array and the array's length at the end and make sure you are right.
+
+
+
+// let arrayThree = [];
+//
+// for (let i = 0; i < 10; i++) {
+//   arrayThree.push(96);
+//   arrayThree.push(96);
+// }
+// console.log(arrayThree.length);
+// console.log(arrayThree);
 
 
 
@@ -65,6 +106,16 @@ console.log(lastVal);
 
 
 
+// let foodsArray = ["cake", "banana", "steak", "human flesh"];
+//
+// for (let i = 0; i < foodsArray.length; i++) {
+//   let foodValue = foodsArray[i];
+//   console.log(foodValue);
+//   console.log(foodValue.toUpperCase());
+// }
+
+
+
 // 5. Make an array that contains five cities.
 // Set up a for loop that will iterate (go through) the array.
 // Do NOT use the number 5 (or 4) in your for loop.
@@ -81,6 +132,15 @@ console.log(lastVal);
 
 
 
+// let cityArray = ["Seoul", "Lagos", "New York City", "Buenos Aires", "Salt Lake City"];
+//
+// for (let i = 0; i < cityArray.length; i++) {
+//   let city = cityArray[i];
+//   console.log(i + ": " + city);
+// }
+
+
+
 // 6. Make an array that contains six numbers.
 // Also make a new, separate empty array called squares.
 // Set up a for loop that will iterate (go through) the array.
@@ -92,6 +152,20 @@ console.log(lastVal);
 // At the end, print out the new array.
 // Assuming your original array was [2,6,4,3,1,7] ...
 // When it is done running, you should see something like [4, 36, 16, 9, 1, 49]
+
+
+
+// let numberArray = [4, 8, 13, 2, 17, 55];
+//
+// let squares = [];
+//
+// for (let i = 0; i < numberArray.length; i++) {
+//   let num = numberArray[i];
+//   squares.push((num ** 2));
+// }
+//
+// console.log(numberArray);
+// console.log(squares);
 
 
 
@@ -110,6 +184,19 @@ console.log(lastVal);
 
 
 
+// let newNumberArray = [2, 55, 74, 34, 16, 49];
+// let reverse = [];
+//
+// for (let i = newNumberArray.length - 1; i >= 0; i--) {
+//   let num = newNumberArray[i];
+//   reverse.push(num);
+// }
+//
+// console.log(newNumberArray);
+// console.log(reverse);
+
+
+
 // 8. Make a new empty array.
 // Ask the user how many letters they would like to type in.
 // Use a for loop to loop that many times.
@@ -121,11 +208,38 @@ console.log(lastVal);
 
 
 
+// let lettersArray = [];
+// let howManyLetters = parseInt(readline.question("How many letters would you like to type in: "));
+// let str;
+//
+// for (let i = 0; i < howManyLetters; i++) {
+//   let letter = readline.question("Enter in a letter: ");
+//   lettersArray.push(letter);
+//   str = lettersArray.join("");
+// }
+//
+// console.log(str);
+
+
+
 // 9. Make a new empty array.
 // Write a for loop that run ten times. Each time, it should add one random number to your array.
 // When that is done, create another for loop that goes throught this array and,
 // one at a time, prints out each item, so that you can see which items were added.
 // Do NOT just print the whole array at once. Get them one at a time and print them.
+
+
+
+// let randomArray = [];
+//
+// for (let i = 0; i < 10; i++) {
+//   let randomNum = randomInt(1, 100000);
+//   randomArray.push(randomNum);
+// }
+//
+// for (let i = 0; i < randomArray.length; i++) {
+//   console.log(randomArray[i]);
+// }
 
 
 
@@ -145,3 +259,41 @@ console.log(lastVal);
 // After both loops are done, print out both the length of the array (should be 52)
 // as well as the array itself, which should look like a deck of cards
 // Something like: ["Aclubs", "Adiamonds", "Aspades", "Ahearts", "2Clubs", "2Diamonds", ...]
+
+
+let deck = [];
+let check;
+let cards = [];
+
+for (let i = 1; i >= 13; i++) {
+  if (i <= 10 && i >= 2) {
+    cards.push(i);
+  } else if (i == 1) {
+    cards.push("A");
+  } else if (i == 11) {
+    cards.push("J");
+  } else if (i == 12) {
+    cards.push("Q");
+  } else if (i == 13) {
+    cards.push("K");
+
+
+    console.log(cards);
+    for (let j = 1; j >= 4; j++) {
+
+
+
+      if (j == 1) {
+        deck.push(cards[i] + "clubs");
+      } else if (j == 2) {
+        deck.push(cards[i] + "diamonds");
+      } else if (j == 3) {
+        deck.push(cards[i] + "spades");
+      } else if (j == 4) {
+        deck.push(cards[i] + "hearts");
+      }
+    }
+  }
+}
+console.log(deck.length);
+console.log(deck);
