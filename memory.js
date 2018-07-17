@@ -131,7 +131,6 @@ function play() {
 
     render(tracker);
     if (tracker[index1] != tracker[index2] || index1 == index2) {
-      console.clear();
       tracker[index1] = current1;
       tracker[index2] = current2;
     }
