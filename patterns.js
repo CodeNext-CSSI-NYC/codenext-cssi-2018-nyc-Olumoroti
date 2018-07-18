@@ -212,17 +212,17 @@
 
 
 
-let numRowsColsPatternSix = 14;
-
-
-for (let i = 0; i <= numRowsColsPatternSix; i++) {
-  let row = "";
-  for (let j = 0; j <= numRowsColsPatternSix; j++) {
-    if (j == Math.floor(numRowsColsPatternSix / 2) || j == Math.ceil(numRowsColsPatternSix / 2)) {
-      row += "*";
-    } else {
-      row += " ";
-    }
-  }
-  console.log(row);
-}
+// let numRowsColsPatternSeven = 14;
+//
+//
+// for (let i = 0; i <= numRowsColsPatternSeven; i++) {
+//   let row = "";
+//   for (let j = 0; j <= numRowsColsPatternSeven; j++) {
+//     if (j == Math.floor(numRowsColsPatternSeven / 2) || j == Math.ceil(numRowsColsPatternSeven / 2)) {
+//       row += "*";
+//     } else {
+//       row += " ";
+//     }
+//   }
+//   console.log(row);
+// }
