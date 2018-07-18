@@ -200,13 +200,14 @@ function hasFullHouse(obj) {
 // a small straight. This means that either all of the values from 1-4 appear at least once,
 // or all the values from 2-5 appear at least once, or all the values from 3-6 appear at least once.
 function hasSmallStraight(obj) {
-  let arr = Object.keys(obj);
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] != undefined && arr[i + 1] != undefined && arr[i + 2] != undefined && arr[i + 3] != undefined) {
-      return true;
-    }
-  }
-  return false;
+  // let arr = Object.keys(obj);
+  // let
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] == 1 && arr[2] == 2 && arr[(i + 2)] != undefined && arr[(i + 3)] != undefined) {
+  //     return true;
+  //   }
+  // }
+  // return false;
 }
 // You can test this out by calling #2 and #3 above to create counter objects,
 // or you can just create your own and pass them in. For example, you could call
