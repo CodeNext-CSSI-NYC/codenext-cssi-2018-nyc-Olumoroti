@@ -35,7 +35,7 @@ function canBalance(nums) {
 }
 
 // Test this function.
-testCanBalance();
+//testCanBalance();
 
 /******************************************************************************
                                     maxSpan()
@@ -52,6 +52,7 @@ maxSpan([1, 4, 2, 1, 4, 4, 4]) → 6
 *******************************************************************************/
 
 function maxSpan(nums) {
+  // use one outer for loop to select a number in the array, and use the inner array to check all the later numbers. declare a temporary span, and find the span between the first and last by using i minus the value of j? store this number(tempSpan) into span if it is bigger than current span. Just my thoughts.
 
 }
 
