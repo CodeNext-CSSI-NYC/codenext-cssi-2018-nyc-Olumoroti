@@ -1,5 +1,6 @@
 // Author: Olumoroti Anibaba
-
+let objEquals = require("object-equal");
+let arrEquals = require("array-equal");
 /******************************************************************************
                                    canBalance()
 
@@ -52,8 +53,34 @@ maxSpan([1, 4, 2, 1, 4, 4, 4]) → 6
 *******************************************************************************/
 
 function maxSpan(nums) {
-  // use one outer for loop to select a number in the array, and use the inner array to check all the later numbers. declare a temporary span, and find the span between the first and last by using i minus the value of j? store this number(tempSpan) into span if it is bigger than current span. Just my thoughts.
+  // let tempSpan;
+  // let span = 0;
+  // for (let check = 0; check < nums.length; check++) {
+  //   for (let num = nums.length - 1; nums >= 0; nums--) {
+  //     let value = nums[check];
+  //     if (value == nums[num]) {
+  //       tempSpan = num - check;
+  //     }
+  //     if (tempSpan >= span) {
+  //       span = tempSpan;
+  //     }
+  //   }
+  // }
+  // return span;
 
+  let tempSpan = 0;
+  let span = 0;
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      if (nums[i] == nums[j]) {
+        tempSpan = (j - i) + 1;
+      }
+      if (tempSpan > span) {
+        span = tempSpan;
+      }
+    }
+  }
+  return span;
 }
 
 // Test this function.
