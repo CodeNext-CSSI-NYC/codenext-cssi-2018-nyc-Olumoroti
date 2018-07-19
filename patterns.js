@@ -57,14 +57,14 @@
 
 
 
-// let numRowsColsPatternTwo = 4;
-// for (let i = 0; i <= numRowsColsPatternTwo; i++) {
+// let numRowsColsPatternTwo = 8;
+// for (let i = 0; i < numRowsColsPatternTwo; i++) {
 //   let row = "";
-//   for (let j = 0; j <= numRowsColsPatternTwo; j++) {
-//     if (i == 0 || i == numRowsColsPatternTwo || (j == 0 || j == numRowsColsPatternTwo)) {
-//       row += "#";
+//   for (let j = 0; j < numRowsColsPatternTwo; j++) {
+//     if (i == 0 || i == numRowsColsPatternTwo - 1 || (j == 0 || j == numRowsColsPatternTwo - 1)) {
+//       row += "*";
 //     } else {
-//       row += "0";
+//       row += "A";
 //     }
 //   }
 //   console.log(row);
