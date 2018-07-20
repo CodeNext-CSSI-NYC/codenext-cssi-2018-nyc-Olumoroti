@@ -46,10 +46,12 @@ function render(track) {
 // After you fill in the letters in the tracker you should call the render
 // function to print out the array.
 
+render(tracker);
 let letterGuess = readline.question("Enter in a letter: ");
 while (!isRevealed(tracker)) {
   console.clear();
   render(checkStr(word, letterGuess, tracker));
+  isRevealed(tracker);
   letterGuess = readline.question("Enter in a letter: ");
 }
 
